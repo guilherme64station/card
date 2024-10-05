@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+.card {
+    width: 100px;
+    height: 150px;
+    background-color: orangered;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.cardImage {
+    position: absolute; /* Posiciona a imagem sobre o card */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta a largura para ocupar todo o card */
+    height: 100%; /* Ajusta a altura para ocupar todo o card */
+    border-radius: 10px; /* Mantém as bordas arredondadas */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.card:active {
+    background-color: orange;
+}
